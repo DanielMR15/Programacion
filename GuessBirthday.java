@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class GuessBirthday{
   public static void main(String[] args){
     String set1 = " 1  3  5  7 \n"+
@@ -20,6 +21,9 @@ public class GuessBirthday{
                   "20 21 22 23 \n"+
                   "24 25 26 27 \n"+
                   "28 29 30 31 \n";
+
+                  Scanner input = new Scanner(System.in);
+                  int day = 0;
 
   System.out.println("is yor birthday in set1?? \n");
   System.out.println(set1);
