@@ -7,13 +7,15 @@ public class Course{
   public Course(){
 
   }
-  public Course(String courseName){
-    this.courseName = courseName;
+  public Course(String CourseName){
+    this.courseName = CourseName;
   }
-/*  public String getCourseName(){                //CONSTRUCTOR  ES UN METODO, INICIALIZA VALORES. MISMO NOMBRE DE LA CLASE
+  /*public String getCourseName(){
+  //CONSTRUCTOR  ES UN METODO, INICIALIZA VALORES. MISMO NOMBRE DE LA CLASE
     return this.courseName;
   }*/
-   public String getCourseName(){                //CONSTRUCTOR  ES UN METODO, INICIALIZA VALORES. MISMO NOMBRE DE LA CLASE
+   public String getCourseName(){
+  //CONSTRUCTOR  ES UN METODO, INICIALIZA VALORES. MISMO NOMBRE DE LA CLASE
       return courseName;
     }
 
@@ -53,9 +55,9 @@ public class Course{
     for (int i = 0; i < numberOfStudents; i++) {
 	      if (students[i].equalsIgnoreCase(student)) {
 	        // Move students[i + 1] to students[i], etc.
-	        for (int k = i + 1; k < numberOfStudents; k++) {
-	          students[k - 1] = students[k];
-            students[k]=null;
+	        for (int d = i + 1; d < numberOfStudents; d++) {
+	          students[d - 1] = students[d];
+            students[d]=null;
 	        }
 
 	        numberOfStudents--;
